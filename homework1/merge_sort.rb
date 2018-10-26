@@ -11,8 +11,9 @@ B. pass left and right subarrays (recursively) to sort(subarray)
 C. merge the returned (sorted) subarrays using merge subroutine
 =end
 
-input = File.read("IntegerArray.txt");
-input = input.split("\r\n").map {|string| string.to_i};
+#input = File.read("IntegerArray.txt");
+#input = input.split("\r\n").map {|string| string.to_i};
+input = (0..1000000).to_a.shuffle
 
 def subarray(array, left_right)
   middle = array.length / 2
