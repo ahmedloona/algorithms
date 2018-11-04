@@ -11,8 +11,8 @@ B. pass left and right subarrays (recursively) to sort(subarray)
 C. merge the returned (sorted) subarrays using merge subroutine
 =end
 
-input = File.read("IntegerArray.txt");
-input = input.split("\r\n").map {|string| string.to_i};
+input = File.read("IntegerArray.txt")
+input = input.split("\r\n").map {|string| string.to_i}
 
 input = (1..1000000).to_a.reverse
 #puts "input length is: #{input}"
